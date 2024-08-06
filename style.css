@@ -1,215 +1,78 @@
-body{
+* { 
     padding: 0;
     margin: 0;
 }
 
-@media screen and (max-width: 450px) and (max-height: 950px) {
-    .head1 {
-        font-size: 28px;
-    }
+body{
+    background-image: url(fon2.png);
+
 }
 
-:root {
-    scroll-behavior: smooth;
+.slider-container {
+  position: relative;
+  width: 600px;
+  height: 400px;
+  margin-top: 200px;
+  margin-left: 650px;
+  overflow: hidden;
+  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: 1px 1px 12px #00ff7d;
 }
 
-.head1 {    
-    width: 100%;
-    height: 44px;
-    background-color: #e59d1f;
-    position: sticky;
-    top: 0;
-    z-index: 1;
-    border: 1px solid rgb(172, 164, 164);
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
 }
 
-.cont {
-    display: flex;
-    justify-content: space-around;
-    padding-top: 10px;
-    font-size: 22px;
-    font-weight: 500;  
-    letter-spacing: 1px;
+.slider img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-a {
-    color: rgb(255, 255, 255);
-    text-decoration: none;
+.prev-button,
+.next-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 50px;
+  background-color: rgb(0 0 0 / 52%);
+  color: #00ff7d;
+  margin-top: 175px;
+  font-size: 15px;
+  font-style: italic;
+  font-weight: 100;
+  letter-spacing: 1px;
 }
 
-a:hover {
-    text-decoration: underline;
+.prev-button {
+  left: 10px;
+  border-radius: 10px;
 }
 
-.igm {
-    display: flex;
-    justify-content: center;
-    background-color: black;
-    height: 760px;
-    
-}
-    
-.title1 {
-    background-color: black;
+.next-button {
+  right: 30px;
+  border-radius: 10px;
+  margin-right: -18px;
 }
 
-.logo {
-    font-size: 140px;
-    position: relative;
-    color: #ff9b3d;
-    font-weight: 400;
-    letter-spacing: 4px;
-    display: flex;
-    justify-content: center;
-    text-transform: uppercase;
-    word-spacing: 5px;
+.im1 {
+  position: absolute;
 }
 
-
-
-.main2 {
-    background-color: rgb(29, 23, 23);
-}
-
-
-.title {
-    display: flex;
-    justify-content: center;
-    color: rgb(233, 198, 146);
-    font-size: 50px;
-    padding-top: 30px;
-    letter-spacing: 3px;
-    
-}
-
-.denImg {
-    display: flex;
-    justify-content: center;   
-    height: 500px;
-    margin-top: 250px;
-    filter: drop-shadow(10px -10px 4px #000000);
-}
-
-.bor {
-    border-radius: 50%;
-    border: 2px solid white;
-}
-
-.name {
-    display: flex;
-    justify-content: center;
-    color: rgb(253, 152, 0);
-    font-size: 70px;
-    margin-top: 20px;
-    font-style: italic;
-    letter-spacing: 3px;
-}
-
-.number2 {
-    display: flex;
-    justify-content: center;
-    font-size: 50px;
-    color: white;
-    letter-spacing: 2px;
-    margin-top: 20px;
-}
-
-.overview {
-    display: flex;
-    justify-content: center;
-    font-size: 29px;
-    padding-left: 180px;
-    margin-top: 30px;
-    color: white;
-    letter-spacing: 1px;
-}
-
-li {
-    padding-bottom: 9px;
-}
-
-.dashaImg {
-    display: flex;
-    justify-content: center;    
-    margin-top: 80px;
-    height: 600px;
-    filter: drop-shadow(10px -10px 4px #000000);
-}
-
-.d1 {
-    border-radius: 20%;
-    border: 2px solid white;
-}
-
-.name2 {
-    display: flex;
-    justify-content: center;
-    margin-top: 30px;
-    color: rgb(253, 152, 0);
-    font-size: 70px;
-    font-style: italic;
-    letter-spacing: 3px;
-}
-
-.number1 {
-    display: flex;
-    justify-content: center;
-    font-size: 50px;
-    color: white;
-    letter-spacing: 2px;
-    margin-top: 20px;
-}
-
-.overview2 {
-    font-size: 29px;
-    display: flex;
-    justify-content: center;
-    margin-top: 30px;
-    color: white;
-    letter-spacing: 1px;
-}
-
-.line {
-    width: 100%;
-    height: 2px;
-    background-color: white;
-} 
-
-.mass {
-    display: flex;
-    justify-content: center;
-    font-size: 60px;
-    color: rgb(233, 198, 146);
-    margin-top: 20px;
-}
-
-
-.container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr) ;
-    grid-row-gap: 400px;
-   align-items: center;
-   justify-items: center;
-   margin-top: 200px;
-   grid-template-rows: repeat(13, 220px);
-}
-
-.shwz {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    color: rgb(255, 255, 255);
-    font-size: 90px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+.im2 {
+  position: absolute;
 }
 
 .im3 {
-    border: 1px solid white;
+  position: absolute;
 }
 
-.t3 {
-    color: white;
-    font-size: 28px;
-    letter-spacing: 2px;
-    font-style: italic;
-    
+.im4 {
+  position: absolute;
+}
+
+.im5 {
+  position: absolute;
 }
